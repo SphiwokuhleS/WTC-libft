@@ -14,9 +14,9 @@ char    *ft_strdup(const char *s)
     }
 
     dup_str = (char *)malloc(i * sizeof(char) + 1); //assign enough memory for the duplicate string
-    if (dup_str == 0) //if no memory was assigned to dup_str, just return 
+    if (dup_str == NULL) //if no memory was assigned to dup_str, just return 
     {
-        return (dup_str);
+        return (NULL);
     }
 
     while (i >= 0)
